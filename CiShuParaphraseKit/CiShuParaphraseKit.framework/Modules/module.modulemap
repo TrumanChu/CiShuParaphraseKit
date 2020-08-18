@@ -1,0 +1,6 @@
+framework module CiShuParaphraseKit {
+  umbrella header "CiShuParaphraseKit.h"
+
+  export *
+  module * { export * }
+}
