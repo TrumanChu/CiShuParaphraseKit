@@ -16,17 +16,16 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CiShuParaphraseKit"
-  spec.version      = "1.0.3"
-  spec.summary      = "汇聚权威辞典，提供准确释义.传播人类知识，传承中华文明."
+  spec.version      = "1.0.4"
+  spec.summary      = "聚典查词平台，官方iOS SDK。"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "聚典查词平台，官方iOS SDK。
-1.快速查词显示功能上下标功能实现
-2.快速查词显示数学公式"
+  spec.description  = "汇聚权威辞典，提供准确释义.传>播人类知识，传承中华文明.
+1.修复非UCT时间导致SDK报错闪退问题修复"
 
   spec.homepage     = "https://judian.jdapi.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
