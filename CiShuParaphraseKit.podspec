@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CiShuParaphraseKit"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "汇聚权威辞典，提供准确释义.传播人类知识，传承中华文明."
 
   # This description is used to generate tags and improve search results.
@@ -97,7 +97,7 @@ Pod::Spec.new do |spec|
 
   spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "CiShuParaphraseKit/CiShuParaphraseKit.framework/Headers/CiShuParaphraseKit.h"
+  #  spec.public_header_files = "CiShuParaphraseKit/CiShuParaphraseKit.framework/Headers/CiShuParaphraseKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -20,10 +20,10 @@ typedef NS_ENUM(NSUInteger, CiShuMenuTipDirection) {
 @interface CiShuDictionaryManager : NSObject
 
 /// 通过id和key获取APP 授权
-/// @param appid 管理后台提供的App Id String
 /// @param appKey 管理后台提供的App Key String
-+ (void)authWithAppId:(NSString *)appid
-               appKey:(NSString*)appKey;
+/// @param appSecret 管理后台提供的App Secret String
++ (void)authWithAppKey:(NSString *)appKey
+             appSecret:(NSString *)appSecret;
 
 
 
