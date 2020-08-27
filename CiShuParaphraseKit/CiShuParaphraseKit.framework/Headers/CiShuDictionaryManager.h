@@ -18,24 +18,24 @@ typedef NS_ENUM(NSUInteger, CiShuMenuTipDirection) {
 @class CiShuResultObject;
 
 typedef NS_ENUM(NSUInteger, CiShuAuthCodeType) {
-    CiShuAuthCodeTypeSucess         = 0,//成功
-    CiShuAuthCodeTypeTimeError      = 1,//本机时间非标准时间
-    CiShuAuthCodeTypeAuthError      = 2,//appKey appSecret 不正确
-    CiShuAuthCodeTypeNetError       = 3,//网络异常
+    CiShuAuthCodeTypeSucess         = 1,//初始化成功，可以正常使用查词功能
+    CiShuAuthCodeTypeInit           = 0,//初始化中
+    CiShuAuthCodeTypeTimeError      = -1,//初始化失败,用户使用的自定义时间与标准UTC时间偏差过大
+    CiShuAuthCodeTypeAuthError      = -2,//appKey appSecret 不正确，请检查SDK
+    CiShuAuthCodeTypeNetError       = -3,//网络异常
 };
 
 @interface CiShuDictionaryManager : NSObject
-
-@property (nonatomic , assign ,readonly) BOOL tokenSuccess;//token获取是否成功
 
 /// 通过id和key获取APP 授权
 /// @param appKey 管理后台提供的App Key String
 /// @param appSecret 管理后台提供的App Secret String
 + (void)authWithAppKey:(NSString *)appKey
-             appSecret:(NSString *)appSecret
-           resultBlock:(void(^)(CiShuAuthCodeType code))block;
+             appSecret:(NSString *)appSecret;
 
 
+/// 获取当前SDK的初始化状态，建议每次查词前调用，如果SDK激活失败可以做对应处理。
++ (CiShuAuthCodeType)cheackInitStatus;
 
 /// 查询词条释义，并展示在window上
 /// @param word 查询的词条
