@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CiShuParaphraseKit"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "聚典查词平台，官方iOS SDK。"
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,8 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "汇聚权威辞典，提供准确释义.传>播人类知识，传承中华文明.
 1.修复非UCT时间导致SDK报错闪退问题修复
-2.SDK增加了返回状态码返回SDK激活是否成功与错误原因"
+2.SDK增加了返回状态码返回SDK激活是否成功与错误原因
+3.新增安全性接口"
 
   spec.homepage     = "https://judian.jdapi.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"

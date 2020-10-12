@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, CiShuAuthCodeType) {
     CiShuAuthCodeTypeSucess         = 1,//初始化成功，可以正常使用查词功能
     CiShuAuthCodeTypeInit           = 0,//初始化中
     CiShuAuthCodeTypeTimeError      = -1,//初始化失败,用户使用的自定义时间与标准UTC时间偏差过大
-    CiShuAuthCodeTypeAuthError      = -2,//appKey appSecret 不正确，请检查
+    CiShuAuthCodeTypeAuthError      = -2,//appKey appSecret 不正确，请检查SDK
     CiShuAuthCodeTypeNetError       = -3,//网络异常
 };
 
